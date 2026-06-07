@@ -23,6 +23,9 @@
 }
 
 body {
+    width: 100vw;
+
+    background-color: #dfdfdf;
     font-family: var(--font1);
 }
 
@@ -62,4 +65,17 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+section.parallax {
+    height: 400px;
+
+    background-color: var(--color5);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.parallax#img1 {
+    background-image: url('../imgs/champions.png');
 }
