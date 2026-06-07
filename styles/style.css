@@ -16,3 +16,32 @@
     --color4: #19381F;
     --color5: #F7A072;
 }
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--font1);
+}
+
+header {
+    padding: 40px 0px;
+
+    background-image: linear-gradient(to top, var(--color4), var(--color2));
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    font-family: var(--font3);
+    font-size: 3em;
+}
+
+header p {
+    margin-top: 10px;
+    color: white;
+    font-size: 1.3em;
+}
