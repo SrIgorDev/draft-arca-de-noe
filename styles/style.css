@@ -6,8 +6,8 @@
 }
 
 :root {
-    --font1: Inter, Arial, Helvetica, sans-serif;
-    --font2: Osvald, Arial, Helvetica, sans-serif;
+    --font1: 'Inter', Arial, Helvetica, sans-serif;
+    --font2: 'Oswald', Arial, Helvetica, sans-serif;
     --font3: 'Augusta', cursive;
 
     --color1: #15E74A;
@@ -23,7 +23,7 @@
 }
 
 body {
-    width: 100vw;
+    height: 100vh;
 
     background-color: #dfdfdf;
     font-family: var(--font1);
@@ -78,4 +78,79 @@ section.parallax {
 
 section.parallax#img1 {
     background-image: url('../imgs/champions.png');
+}
+
+h2.title {
+    /* color: ; */
+
+    max-width: 400px;
+    padding: 10px;
+    margin: 50px auto;
+    text-align: center;
+    margin-top: 50px;
+
+    font-size: 2.5em;
+    font-family: var(--font3);
+
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px #00000080;
+    background-color: white;
+}
+
+div.cards {
+    margin: 50px 0px;
+    padding: 20px;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+}
+
+div.card {
+    position: relative;
+    width: 250px;
+    min-height: 180px;
+    padding: 10px;
+
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px #00000080;
+}
+
+div.card img {
+    position: absolute;
+    padding: 5px;
+
+    max-width: 50px;
+    max-height: 50px;
+
+    left: 5%;
+    top: 10%;
+
+    background-color: var(--color5);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #00000040;
+}
+
+div.card h2 {
+    position: absolute;
+
+    left: 5%;
+    top: 45%;
+
+    color: gray;
+    font-size: 1.2em;
+}
+
+div.card p {
+    position: absolute;
+
+    left: 8%;
+    top: 65%;
+
+    font-family: var(--font2);
+    font-weight: bold;
+    font-size: 2em;
 }
