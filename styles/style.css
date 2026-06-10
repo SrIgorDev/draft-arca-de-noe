@@ -1,20 +1,16 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: 'Augusta';
-    src: url('../fonts/Augusta.ttf') format('truetype');
-}
-
 :root {
     --font1: 'Inter', Arial, Helvetica, sans-serif;
     --font2: 'Oswald', Arial, Helvetica, sans-serif;
-    --font3: 'Augusta', cursive;
+    --font3: 'Bebas Neue', cursive;
 
-    --color1: #15E74A;
-    --color2: #34C95A;
-    --color3: #45965A;
-    --color4: #19381F;
-    --color5: #F7A072;
+    --color1: #6FC984;
+    --color2: #36B353;
+    --color3: #198A33;
+    --color4: #08601d;
+    --color5: #073812;
+    --team_color: #386fd6;
 }
 
 * {
@@ -80,21 +76,57 @@ section.parallax#img1 {
     background-image: url('../imgs/champions.png');
 }
 
-h2.title {
-    /* color: ; */
+section#home {
+    max-width: 100%;
 
-    max-width: 400px;
-    padding: 10px;
-    margin: 50px auto;
-    text-align: center;
-    margin-top: 50px;
+    margin: 0px 3vw;
+}
 
-    font-size: 2.5em;
+section#home > h2 {
+    margin: 30px 30px;
+
     font-family: var(--font3);
+    font-size: 2.5em;
+}
 
-    border-radius: 12px;
-    box-shadow: 0px 0px 5px #00000080;
-    background-color: white;
+section#home h3 {
+    font: normal normal 2em var(--font3);
+}
+
+div#home-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+div#home-content-img {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 400px;
+}
+
+div#home-content-img > img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+div#home-content-text {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 400px;
+}
+
+div#home-content-text h3 {
+    margin: 10px 0px;
+    padding: 0px 10px;
+    background-image: linear-gradient(to right, var(--team_color), transparent 70%);
+    border-radius: 5px;
+}
+
+div#home-content-text p {
+    text-indent: 40px;
 }
 
 div.cards {
@@ -104,7 +136,7 @@ div.cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 10vw;
     
 }
 
@@ -129,7 +161,7 @@ div.card img {
     left: 5%;
     top: 10%;
 
-    background-color: var(--color5);
+    background-color: var(--team_color);
     border-radius: 10px;
     box-shadow: 3px 3px 5px #00000040;
 }

@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="styles/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="onLoad()">
     <header>
         <h1>Draft Arca De Noé</h1>
         <p>Onde lendas são criadas.</p>
     </header>
 
     <nav>
-        <a href="#">Início</a>
+        <a href="#home">Home</a>
         <a href="#">História</a>
         <a href="#">Edições</a>
         <a href="#">Participantes</a>
@@ -28,8 +28,20 @@
     <main>
         <section class="parallax" id="img1"></section>
 
-        <section>
-            <h2 class="title">O Draft em Números</h2>
+        <section id="home">
+            <h2>O QUE É O DRAFT?</h2>
+            <div id="home-content">
+                <div id="home-content-img">
+                    <img src="imgs/bahiaxsport.png" alt="" id="game-img">
+                </div>
+
+                <div id="home-content-text">
+                    <h3>HISTÓRIA</h3>
+                    <p>Criado pela National Football League (NFL) em 1936, o Draft surgiu com o objetivo de tornar as competições mais equilibradas, permitindo que as equipes com pior desempenho tivessem prioridade na escolha de novos talentos. Com o passar dos anos, o modelo foi adotado por diversas ligas esportivas dos Estados Unidos, incluindo a National Basketball Association (NBA), tornando-se uma das principais ferramentas para renovação de elencos e manutenção da competitividade entre as franquias.</p>
+                    <h3>A BATALHA COMEÇA AQUI</h3>
+                    <p>Toda dinastia tem um começo. Toda conquista nasce de uma escolha. No Draft, capitães analisam talentos, traçam estratégias e montam equipes capazes de enfrentar qualquer desafio. Cada seleção pode revelar uma estrela, fortalecer um elenco ou mudar completamente o destino de uma temporada. É aqui que os sonhos ganham forma e a corrida pelo título tem início. ⚽🏆🔥</p>
+                </div>
+            </div>
             <div class="cards">
                 <div class="card" id="card1">
                     <img src="imgs/trophy.png" alt="trophy">
@@ -53,5 +65,6 @@
     <footer>
         <p style="padding-bottom: 50vh;">a</p>
     </footer>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
