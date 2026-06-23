@@ -190,3 +190,7 @@ div.card p {
     font-weight: bold;
     font-size: 2em;
 }
+
+main {
+    padding-bottom: 100vh;
+}
